@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "officerelations",
+  "info": {
+    "singularName": "officerelation",
+    "pluralName": "officerelations",
+    "displayName": "officerelation"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "parent_office_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::office.office"
+    },
+    "child_office_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::office.office"
+    }
+  }
+}
